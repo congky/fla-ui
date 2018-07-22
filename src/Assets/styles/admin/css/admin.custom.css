@@ -1,0 +1,264 @@
+
+html, body, .view {
+    height: 100%;
+    width: 100%;
+}
+body{
+    top:auto!important;
+}
+hr{
+    border-top-color:#dadada;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.copyright p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+}
+
+*::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a7a7a7!important;
+}
+
+.bg_lb{
+    background:#27a9e3;
+}
+.bg_db{
+    background:#2295c9;
+}
+.bg_lg{
+    background:#28b779;
+}
+.bg_dg{
+    background:#28b779;
+}
+.bg_ly{
+    background:#ffb848;
+}
+.bg_dy{
+    background:#da9628;
+}
+.bg_ls{
+    background:#2255a4;
+}
+.bg_lo{
+    background:#da542e;
+}
+.bg_lr{
+    background:#f74d4d;
+}
+.bg_lv{
+    background:#603bbc;
+}
+.bg_lh{
+    background:#b6b3b3;
+}
+.bg_db{
+     background:#2E363F;
+ }
+.bg_none{
+    background: none;
+}
+a#to-recover, a#to-login {
+    color: #fff;
+}
+#logo, #loginbox {
+    width: 32%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+#logo img {
+    margin: 0 auto;
+    display: block;
+}
+#loginbox {
+    overflow: hidden !important;
+    background:#2E363F;
+    height: calc(100% - 40px);
+    width: 100%;
+    text-align: left;
+    padding: 125px 0;
+    position: relative;
+}
+#loginbox form {
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    width: 33%;
+    background:#2E363F;
+    position:relative;
+    top:0;
+    left:0;
+}
+#loginbox .form-actions {
+    margin: auto;
+    width: 75%;
+    padding: 0;
+}
+#loginbox .form-actions .pull-left {
+    margin-top:0px;
+}
+#loginbox form#loginform {
+    z-index: 200;
+    display:block;
+}
+#loginbox form#recoverform {
+    z-index: 100;
+}
+#loginbox form#recoverform .form-actions {
+    margin-top: 10px;
+}
+
+#loginbox .main_input_box .input-group-text {
+    color: #fff;
+}
+#loginbox .main_input_box {
+    margin: auto;
+    width: 75%;
+}
+#loginbox input[type="password"] {
+    padding-right: 35px;
+}
+#loginbox .main_input_box .input-group-text, #loginbox .main_input_box input {
+    border:0px;
+    border-radius:0px;
+}
+#loginbox .main_input_box input:focus{
+    outline: none;
+    box-shadow: none;
+}
+#loginbox .controls{
+    padding:0 20px;
+}
+#loginbox .control-group{
+    padding:20px 0;
+    margin-bottom:0px;
+}
+.form-vertical {
+    margin-bottom: 0;
+    background:none;
+    border-top:1px solid #3f4954;
+    border-bottom:1px solid #3f4954;
+}
+#loginbox .normal_text{
+    padding:15px 10px;
+    text-align:center;
+    font-size:14px;
+    line-height:20px;
+    background:#2E363F;
+    color:#fff;
+}
+#loginform .form-actions .btn, #recoverform .form-actions .btn {
+    border-radius: 0px;
+}
+@media (max-width:800px){
+    #logo {
+        width: 60%;
+    }
+    #loginbox form{
+        width:80%
+    }
+}
+@media (max-width: 480px){
+    #logo {
+        width: 40%;
+    }
+    #loginbox form {
+        width:90%
+    }
+    #loginbox .control-group{
+        padding:8px 0;
+        margin-bottom:0px;
+    }
+}
+
+.view-pass {
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    z-index: 9;
+}
+.view-pass.show {
+    opacity: 0.3;
+    visibility: visible;
+}
+.view-pass.show:hover {
+    opacity: 1;
+}
+
+.btn:focus{
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+button:disabled,button.disabled {
+    cursor: default!important;
+}
+
+input.instant-search {
+    height: auto!important;
+}
+
+#loader {
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    z-index: 90000
+}
+
+#loader.fadeOut {
+    opacity: 0;
+    visibility: hidden
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+    animation: sk-scaleout 1s infinite ease-in-out
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0
+    }
+}
+.ui-select-no-choice{
+    color: #777;
+    padding: 0 5px 5px;
+}

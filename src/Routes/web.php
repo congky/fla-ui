@@ -12,6 +12,6 @@
 */
 Route::group(['namespace' => 'FLA\UI\Controllers', 'middleware' => 'web'], function () {
     Route::get('/login', function () {
-        return view('app.admin.login');
+        return view('flaCommonUI::admin.login.login');
     });
 });
