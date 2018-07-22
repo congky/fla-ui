@@ -8,7 +8,7 @@
 @endsection
 
 @section('custom-script')
-    <script src="{{asset('app/fla-ui/controller/login.controller.js')}}"></script>
+    <script src="{{asset('app/fla-ui/controllers/login.controller.js')}}"></script>
 @endsection
 
 @section('content')
