@@ -12,12 +12,12 @@
     <link href="{{asset('app/fla-ui/style/admin/css/admin.custom.css')}}" rel="stylesheet">
     @yield('custom-style')
 
-    <script src="{{asset('app/fla-ui/query-3.3.1.min.js')}}"></script>
-    <script src="{{asset('app/fla-ui/angular.min.js')}}"></script>
-    <script src="{{asset('app/fla-ui/angular-pagination.min.js')}}"></script>
-    <script src="{{asset('app/fla-ui/angular-cookies.min.js')}}"></script>
-    <script src="{{asset('app/fla-ui/angular-sanitize.min.js')}}"></script>
-    <script src="{{asset('app/fla-ui/select.min.js')}}"></script>
+    <script src="{{asset('app/fla-ui/core/js/query-3.3.1.min.js')}}"></script>
+    <script src="{{asset('app/fla-ui/core/js/angular.min.js')}}"></script>
+    <script src="{{asset('app/fla-ui/core/js/angular-pagination.min.js')}}"></script>
+    <script src="{{asset('app/fla-ui/core/js/angular-cookies.min.js')}}"></script>
+    <script src="{{asset('app/fla-ui/core/js/angular-sanitize.min.js')}}"></script>
+    <script src="{{asset('app/fla-ui/core/js/select.min.js')}}"></script>
 
     <script src="{{asset('app/fla-ui/core/js/app.route.js')}}"></script>
     <script src="{{asset('app/fla-ui/core/js/app.util.js')}}"></script>

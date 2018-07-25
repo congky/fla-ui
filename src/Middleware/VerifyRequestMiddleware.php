@@ -1,5 +1,5 @@
 <?php
-namespace FLA\Common\Middleware;
+namespace FLA\UI\Middleware;
 
 use FLA\Common\BusinessObject\BusinessFunction\user\FindUserByToken;
 use FLA\Common\BusinessObject\BusinessFunction\user\ValTokenIsExists;

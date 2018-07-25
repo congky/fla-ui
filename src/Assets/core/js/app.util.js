@@ -12,34 +12,6 @@
                 return 'ontouchstart' in document.documentElement;
             };
 
-            /**
-             * Mendapatkan current user role
-             */
-            var getUserLoggedInfo = function() {
-                var input = {
-                }
-                CommonService.getUserLoggedInfo(input)
-                .then(function (result) {
-                    console.log(result);
-                        if(result.status == constant.OK) {
-                            $rootScope.currentRole = {};
-
-                            var userInfo = result.response.userInfo;
-                            $rootScope.full_name = userInfo.full_name;
-                            $rootScope.currentRole.selected = result.response.currentRole;
-                            $rootScope.userRoleList = result.response.userRoleList;
-                            // localStorage.setItem('currentRole', result.response.role_code);
-                        }
-
-                    }
-                )
-                .catch(function (result) {
-                        console.log(result);
-                    }
-                )
-            }
-            getUserLoggedInfo();
-
             $rootScope.changeRole = function(){
                 console.log("current role : ", $rootScope.currentRole.selected);
             }

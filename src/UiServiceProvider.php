@@ -18,6 +18,12 @@ class UiServiceProvider extends ServiceProvider
         require __DIR__ . '/Routes/api.php';
         require __DIR__ . '/Routes/web.php';
 
+        // Load function helpers
+        require __DIR__ . '/Utils/FunctionHelpers.php';
+
+        // Load directive
+        require __DIR__ . '/Utils/Directive.php';
+
         // Load views
         $this->loadViewsFrom(__DIR__.'/Views', 'flaCommonUI');
 

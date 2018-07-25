@@ -4,9 +4,9 @@
     var app = angular.module('flaApp');
     app.controller('LoginCtrl', LoginCtrl);
     
-    LoginCtrl.$inject = ['$scope', 'AuthService', 'constant', '$window'];
+    LoginCtrl.$inject = ['$scope', 'CallService', 'constant', '$window'];
 
-    function LoginCtrl($scope, AuthService, constant, $window) {
+    function LoginCtrl($scope, CallService, constant, $window) {
 
         this.toLogin = true;
         this.forggotPassword = false;
@@ -56,7 +56,7 @@
                 username : this.input.username,
                 password : this.input.password
             }
-            AuthService.login(input)
+            CallService.call(input)
                 .then(function (result) {
                         if(result.data.status == constant.OK) {
                             localStorage.setItem('token', result.data.response.user_token);

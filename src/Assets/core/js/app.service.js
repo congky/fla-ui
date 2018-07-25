@@ -4,13 +4,18 @@
     var app = angular.module('flaApp');
 
     // common service
-    app.service('CommonService', CommonService);
-    function CommonService($http, constant) {
+    app.service('CallService', CallService);
+    function CallService($http, constant) {
         return {
-            getUserLoggedInfo : function (input) {
+            call : function (service, payload) {
+                var input = {
+                    service : service.name,
+                    task : service.task,
+                    payload : payload
+                };
                 var req = $http({
                     method: "GET",
-                    url: constant.SITE_URL+"/api/get-user-logged-info",
+                    url: constant.SITE_URL+"/api/call-service",
                     params: input
                 });
 
@@ -28,7 +33,7 @@
             login : function (input) {
                 var req = $http({
                     method: "POST",
-                    url: constant.SITE_URL+"/api/login",
+                    url: constant.SITE_URL+"/api/call-service",
                     data: input
                 });
 
